@@ -1,19 +1,199 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Roboto:wght@500;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: inherit; }
+
+body {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  line-height: 1.5; }
+
+h1 {
+  font-size: 64px; }
+
+h2 {
+  font-size: 48px; }
+
+p,
+li {
+  font-size: 20px; }
+
+.container {
+  padding: 0 312px;
+  margin: 0 auto; }
+
+.d-flex {
+  display: flex; }
+
+.wrap {
   display: flex;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: #00cc99; }
+  flex-wrap: wrap; }
+
+.logo {
+  float: left; }
+  .logo a {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+    background-size: cover;
+    display: block;
+    max-width: 80px;
+    max-height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+  .nav ul {
+    display: flex;
+    align-items: center; }
+    .nav ul li {
+      margin-left: 64px; }
+
+.nav-primary {
+  background-color: #aa0601;
+  color: #fff; }
+
+.footer-primary {
+  background-color: #aa0601;
+  color: #fff; }
 
 /*# sourceMappingURL=all.css.map */

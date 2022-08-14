@@ -1,0 +1,62 @@
+body {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 64px;
+}
+h2 {
+  font-size: 48px;
+}
+p,
+li {
+  font-size: 20px;
+}
+.container {
+  padding: 0 312px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  float: left;
+  a {
+    // background-image: url("../assets/images/logo-white.png");
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+    background-size: cover;
+    display: block;
+    max-width: 80px;
+    max-height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      margin-left: 64px;
+    }
+  }
+}
+.nav-primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+.footer {
+}
+.footer-primary {
+  background-color: $primary;
+  color: #fff;
+}
