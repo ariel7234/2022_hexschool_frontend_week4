@@ -12,18 +12,37 @@ p,
 li {
   font-size: 20px;
 }
+.pb-4 {
+  padding-bottom: 32px;
+}
+.pt-6 {
+  padding-top: 48px;
+}
+.mr-6 {
+  margin-right: 48px;
+}
+
 .container {
   padding: 0 312px;
   margin: 0 auto;
 }
-.d-flex {
+.flex {
   display: flex;
 }
 .wrap {
   display: flex;
   flex-wrap: wrap;
 }
-
+.justify-content-between {
+  justify-content: space-between;
+}
+.link-primary {
+  color: #fff;
+  &:hover {
+    color: $pink;
+    text-decoration: underline;
+  }
+}
 .logo {
   float: left;
   a {
@@ -47,6 +66,10 @@ li {
     li {
       margin-left: 64px;
     }
+    li:hover {
+      color: #fbf2f2;
+      text-decoration: underline;
+    }
   }
 }
 .nav-primary {
@@ -59,4 +82,10 @@ li {
 .footer-primary {
   background-color: $primary;
   color: #fff;
+}
+
+.footer-social {
+  li {
+    height: 48px;
+  }
 }
