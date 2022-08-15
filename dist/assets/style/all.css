@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -146,15 +146,21 @@ body {
   font-family: "Noto Sans TC", "Roboto", sans-serif;
   line-height: 1.5; }
 
-h1 {
+.h1 {
   font-size: 64px; }
 
-h2 {
+.h2 {
   font-size: 48px; }
+
+.h3 {
+  font-size: 24px; }
 
 p,
 li {
   font-size: 20px; }
+
+.mr-3 {
+  margin-right: 24px; }
 
 .mt-4 {
   margin-top: 32px; }
@@ -171,6 +177,15 @@ li {
 .mr-6 {
   margin-right: 48px; }
 
+.mb-6 {
+  margin-bottom: 48px; }
+
+.pt-10 {
+  padding-top: 80px; }
+
+.pb-10 {
+  padding-bottom: 80px; }
+
 .material-icons {
   color: white;
   font-size: 36px;
@@ -178,6 +193,9 @@ li {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48; }
+
+.h-100 {
+  height: 100%; }
 
 .container {
   padding: 0 312px;
@@ -190,8 +208,53 @@ li {
   display: flex;
   flex-wrap: wrap; }
 
+.justify-content-end {
+  justify-content: flex-end; }
+
 .justify-content-between {
   justify-content: space-between; }
+
+.align-items-center {
+  align-items: center; }
+
+.align-content-center {
+  align-content: center; }
+
+.float-right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-bolder {
+  font-weight: 900; }
+
+.text-italic {
+  font-style: italic; }
+
+.btn {
+  font-size: 20px;
+  padding: 6px 12px;
+  display: block;
+  border: 0; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #aa0601; }
+  .btn-primary:hover {
+    background-color: #910501; }
+
+.text-primary {
+  color: #aa0601; }
+
+.text-info {
+  color: #650300; }
 
 .link-primary {
   color: #fff; }
@@ -199,14 +262,19 @@ li {
     opacity: 0.8;
     text-decoration: underline; }
 
+.card {
+  display: inline-block;
+  width: auto; }
+
 .logo {
   float: left; }
   .logo a {
     background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
     background-size: cover;
-    display: block;
-    max-width: 80px;
-    max-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 50px;
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap; }
@@ -216,7 +284,8 @@ li {
   justify-content: space-between; }
   .nav ul {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding: 25px 0; }
     .nav ul li {
       margin-left: 64px; }
     .nav ul li:hover {
@@ -252,5 +321,33 @@ li {
 
 .footer-copyright li {
   margin-left: 48px; }
+
+.banner {
+  background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header.png?raw=true");
+  background-size: cover;
+  height: 100vh; }
+
+.banner-content {
+  float: right; }
+  .banner-content p {
+    font-size: 36px; }
+  .banner-content h2 {
+    font-size: 64px;
+    font-weight: bold; }
+
+.intro {
+  padding: 80px 0;
+  background-color: #fbf2f2; }
+  .intro li {
+    max-width: 24%;
+    vertical-align: top; }
+  .intro img {
+    width: 84px; }
+  .intro h4 {
+    margin-top: 24px;
+    margin-bottom: 8px; }
+
+.kinds li {
+  max-width: 30%; }
 
 /*# sourceMappingURL=all.css.map */
