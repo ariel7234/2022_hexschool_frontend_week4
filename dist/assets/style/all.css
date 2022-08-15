@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Roboto:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,6 +165,14 @@ li {
 .mr-6 {
   margin-right: 48px; }
 
+.material-icons {
+  color: white;
+  font-size: 36px;
+  text-decoration: none; }
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48; }
+
 .container {
   padding: 0 312px;
   margin: 0 auto; }
@@ -188,7 +196,7 @@ li {
 .logo {
   float: left; }
   .logo a {
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+    background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
     background-size: cover;
     display: block;
     max-width: 80px;
@@ -217,7 +225,16 @@ li {
   background-color: #aa0601;
   color: #fff; }
 
-.footer-social li {
-  height: 48px; }
+.footer-social img {
+  height: 48px;
+  margin-left: 32px; }
+
+.footer-contact li {
+  display: flex;
+  align-items: center; }
+
+.footer-contact a {
+  font-size: 36px;
+  margin-left: 22px; }
 
 /*# sourceMappingURL=all.css.map */

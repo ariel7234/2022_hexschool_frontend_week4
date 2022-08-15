@@ -21,7 +21,14 @@ li {
 .mr-6 {
   margin-right: 48px;
 }
-
+.material-icons {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
 .container {
   padding: 0 312px;
   margin: 0 auto;
@@ -47,7 +54,7 @@ li {
   float: left;
   a {
     // background-image: url("../assets/images/logo-white.png");
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+    background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
     background-size: cover;
     display: block;
     max-width: 80px;
@@ -85,7 +92,18 @@ li {
 }
 
 .footer-social {
-  li {
+  img {
     height: 48px;
+    margin-left: 32px;
+  }
+}
+.footer-contact {
+  li {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    font-size: 36px;
+    margin-left: 22px;
   }
 }
