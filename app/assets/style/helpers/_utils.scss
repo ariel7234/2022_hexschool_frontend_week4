@@ -12,6 +12,12 @@ p,
 li {
   font-size: 20px;
 }
+.mt-4 {
+  margin-top: 32px;
+}
+.mb-4 {
+  margin-bottom: 32px;
+}
 .pb-4 {
   padding-bottom: 32px;
 }
@@ -46,10 +52,11 @@ li {
 .link-primary {
   color: #fff;
   &:hover {
-    color: $pink;
+    opacity: 0.8;
     text-decoration: underline;
   }
 }
+
 .logo {
   float: left;
   a {
@@ -83,8 +90,9 @@ li {
   background-color: $primary;
   color: #fff;
 }
-
 .footer {
+  padding-top: 60px;
+  padding-bottom: 32px;
 }
 .footer-primary {
   background-color: $primary;
@@ -96,6 +104,9 @@ li {
     height: 48px;
     margin-left: 32px;
   }
+  a:hover {
+    opacity: 0.8;
+  }
 }
 .footer-contact {
   li {
@@ -105,5 +116,10 @@ li {
   a {
     font-size: 36px;
     margin-left: 22px;
+  }
+}
+.footer-copyright {
+  li {
+    margin-left: 48px;
   }
 }
