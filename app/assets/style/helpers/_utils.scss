@@ -2,6 +2,12 @@ body {
   font-family: "Noto Sans TC", "Roboto", sans-serif;
   line-height: 1.5;
 }
+img {
+  object-fit: cover;
+}
+.outline {
+  border: 1px solid #000;
+}
 .h1 {
   font-size: 64px;
 }
@@ -15,32 +21,44 @@ p,
 li {
   font-size: 20px;
 }
-.mr-3 {
-  margin-right: 24px;
+.p-3 {
+  padding: 12px;
 }
-.mt-4 {
-  margin-top: 32px;
+.mr-1 {
+  margin-right: 4px !important;
 }
-.mb-4 {
-  margin-bottom: 32px;
+.mb-8 {
+  margin-bottom: 16px !important;
 }
-.pb-4 {
-  padding-bottom: 32px;
+.mr-12 {
+  margin-right: 24px !important;
 }
-.pt-6 {
-  padding-top: 48px;
+.mb-12 {
+  margin-bottom: 24px !important;
 }
-.mr-6 {
-  margin-right: 48px;
+.mt-8 {
+  margin-top: 32px !important;
 }
-.mb-6 {
-  margin-bottom: 48px;
+.mb-8 {
+  margin-bottom: 32px !important;
 }
-.pt-10 {
-  padding-top: 80px;
+.pb-8 {
+  padding-bottom: 32px !important;
 }
-.pb-10 {
-  padding-bottom: 80px;
+.pt-12 {
+  padding-top: 48px !important;
+}
+.mr-12 {
+  margin-right: 48px !important;
+}
+.mb-12 {
+  margin-bottom: 48px !important;
+}
+.pt-20 {
+  padding-top: 80px !important;
+}
+.pb-20 {
+  padding-bottom: 80px !important;
 }
 .material-icons {
   color: white;
@@ -56,9 +74,15 @@ li {
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  @media (max-width: $mobile) {
+    max-width: 696px;
+  }
 }
 .flex {
   display: flex;
+}
+.flex-row {
+  flex-direction: column;
 }
 .wrap {
   display: flex;
@@ -70,11 +94,15 @@ li {
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-center {
+  justify-content: center;
+}
 .align-items-center {
   align-items: center;
 }
-.align-content-center {
-  align-content: center;
+.input-group {
+  display: flex;
+  align-items: center;
 }
 .float-right {
   float: right;
@@ -114,6 +142,7 @@ li {
   padding: 6px 12px;
   display: block;
   border: 0;
+  text-align: center;
 }
 .btn-primary {
   color: #fff;
@@ -122,7 +151,13 @@ li {
     background-color: darken($primary, 5%);
   }
 }
-
+.btn-lg {
+  width: 416px;
+  padding: 16px;
+}
+.center {
+  margin: 0 auto;
+}
 .link-primary {
   color: #fff;
   &:hover {
@@ -130,11 +165,7 @@ li {
     text-decoration: underline;
   }
 }
-.card {
-  display: inline-block;
-  width: auto;
-  height: auto;
-}
+
 .card-img {
   width: 100%;
   overflow: hidden;
@@ -142,11 +173,12 @@ li {
 .card-shadow {
   // box-shadow: 3px 3px 12px gray;
   // padding: 3px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
   transition: 0.3s;
 }
 .card-body {
   padding: 16px;
+  height: auto;
 }
 .card-title {
   font-size: 16px;
@@ -155,5 +187,19 @@ li {
 .card-caption {
   font-size: 14px;
   color: #707070;
-  vertical-align: bottom;
+}
+.form {
+  label {
+    margin-bottom: 8px;
+  }
+  input {
+    margin-bottom: 16px;
+    height: 33px;
+  }
+}
+.input-group {
+  input,
+  label {
+    margin: 0px;
+  }
 }

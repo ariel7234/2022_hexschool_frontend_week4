@@ -18,21 +18,32 @@
   padding: 80px 0;
   background-color: $pink;
   li {
-    max-width: 22%;
+    width: 25%;
     vertical-align: top;
   }
   img {
-    width: 84px;
+    max-width: 84px;
   }
   h4 {
     margin-top: 24px;
     margin-bottom: 8px;
   }
+  @media (max-width: $mobile) {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      width: 40%;
+      margin-bottom: 24px;
+      // margin-right: 24px;
+    }
+  }
 }
 
 .kinds {
   li {
-    max-width: 30%;
+    max-width: 33%;
   }
   img {
     margin-bottom: 8px;
@@ -43,8 +54,8 @@
   text-align: center;
   background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/index-bg.png?raw=true");
   background-size: cover;
-  .card {
-    max-width: 49%;
+  li {
+    max-width: 50%;
   }
   p {
     padding: 8px 0;
@@ -55,7 +66,25 @@
   text-align: center;
 
   .card {
-    max-width: 22%;
-    // height: 511px;
+    width: 25%;
+    position: relative;
+  }
+  .card-img {
+    height: 316px;
+  }
+  .card-body {
+    height: 205px;
+  }
+  .card-caption {
+    position: absolute;
+    bottom: 16px;
+  }
+}
+
+.contact {
+  padding: 80px 0;
+  background-color: $pink;
+  .container {
+    max-width: 636px;
   }
 }
