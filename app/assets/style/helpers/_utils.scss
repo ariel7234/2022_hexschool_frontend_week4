@@ -54,7 +54,7 @@ li {
   height: 100%;
 }
 .container {
-  padding: 0 312px;
+  max-width: 1296px;
   margin: 0 auto;
 }
 .flex {
@@ -156,73 +156,4 @@ li {
   font-size: 14px;
   color: #707070;
   vertical-align: bottom;
-}
-.logo {
-  float: left;
-  a {
-    // background-image: url("../assets/images/logo-white.png");
-    background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
-    background-size: cover;
-    display: inline-block;
-    vertical-align: middle;
-    width: 80px;
-    height: 50px;
-    text-indent: 101%;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  ul {
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-    li {
-      margin-left: 64px;
-    }
-    li:hover {
-      color: #fbf2f2;
-      text-decoration: underline;
-    }
-  }
-}
-.nav-primary {
-  background-color: $primary;
-  color: #fff;
-}
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 32px;
-}
-.footer-primary {
-  background-color: $primary;
-  color: #fff;
-}
-
-.footer-social {
-  img {
-    height: 48px;
-    margin-left: 32px;
-  }
-  a:hover {
-    opacity: 0.8;
-  }
-}
-.footer-contact {
-  li {
-    display: flex;
-    align-items: center;
-  }
-  a {
-    font-size: 36px;
-    margin-left: 22px;
-  }
-}
-.footer-copyright {
-  li {
-    margin-left: 48px;
-  }
 }
