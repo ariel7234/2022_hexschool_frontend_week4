@@ -85,6 +85,9 @@ li {
 .text-right {
   text-align: right;
 }
+.text-left {
+  text-align: left;
+}
 .text-bold {
   font-weight: bold;
 }
@@ -93,6 +96,18 @@ li {
 }
 .text-italic {
   font-style: italic;
+}
+.text-primary {
+  color: $primary;
+}
+.text-info {
+  color: $brown-darker;
+}
+.text-white {
+  color: #fff;
+}
+.bg-white {
+  background-color: #fff;
 }
 .btn {
   font-size: 20px;
@@ -107,12 +122,7 @@ li {
     background-color: darken($primary, 5%);
   }
 }
-.text-primary {
-  color: $primary;
-}
-.text-info {
-  color: $brown-darker;
-}
+
 .link-primary {
   color: #fff;
   &:hover {
@@ -123,6 +133,29 @@ li {
 .card {
   display: inline-block;
   width: auto;
+  height: auto;
+}
+.card-img {
+  width: 100%;
+  overflow: hidden;
+}
+.card-shadow {
+  // box-shadow: 3px 3px 12px gray;
+  // padding: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card-body {
+  padding: 16px;
+}
+.card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-caption {
+  font-size: 14px;
+  color: #707070;
+  vertical-align: bottom;
 }
 .logo {
   float: left;

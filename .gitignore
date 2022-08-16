@@ -66,5 +66,5 @@ Temporary Items
 
 node_modules
 .publish
-dist
 package-lock.json
+dist
