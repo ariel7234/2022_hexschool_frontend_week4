@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:wght@400;500;700;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: inherit; }
+
+body {
+  font-family: "Noto Sans TC", "Roboto", sans-serif;
+  line-height: 1.5; }
+
+.h1 {
+  font-size: 64px; }
+
+.h2 {
+  font-size: 48px; }
+
+.h3 {
+  font-size: 24px; }
+
+p,
+li {
+  font-size: 20px; }
+
+.mr-3 {
+  margin-right: 24px; }
+
+.mt-4 {
+  margin-top: 32px; }
+
+.mb-4 {
+  margin-bottom: 32px; }
+
+.pb-4 {
+  padding-bottom: 32px; }
+
+.pt-6 {
+  padding-top: 48px; }
+
+.mr-6 {
+  margin-right: 48px; }
+
+.mb-6 {
+  margin-bottom: 48px; }
+
+.pt-10 {
+  padding-top: 80px; }
+
+.pb-10 {
+  padding-bottom: 80px; }
+
+.material-icons {
+  color: white;
+  font-size: 36px;
+  text-decoration: none; }
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48; }
+
+.h-100 {
+  height: 100%; }
+
+.container {
+  padding: 0 312px;
+  margin: 0 auto; }
+
+.flex {
+  display: flex; }
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap; }
+
+.justify-content-end {
+  justify-content: flex-end; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.align-items-center {
+  align-items: center; }
+
+.align-content-center {
+  align-content: center; }
+
+.float-right {
+  float: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-bolder {
+  font-weight: 900; }
+
+.text-italic {
+  font-style: italic; }
+
+.text-primary {
+  color: #aa0601; }
+
+.text-info {
+  color: #650300; }
+
+.text-white {
+  color: #fff; }
+
+.bg-white {
+  background-color: #fff; }
+
+.btn {
+  font-size: 20px;
+  padding: 6px 12px;
+  display: block;
+  border: 0; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #aa0601; }
+  .btn-primary:hover {
+    background-color: #910501; }
+
+.link-primary {
+  color: #fff; }
+  .link-primary:hover {
+    opacity: 0.8;
+    text-decoration: underline; }
+
+.card {
+  display: inline-block;
+  width: auto;
+  height: auto; }
+
+.card-img {
+  width: 100%;
+  overflow: hidden; }
+
+.card-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; }
+
+.card-body {
+  padding: 16px; }
+
+.card-title {
+  font-size: 16px;
+  font-weight: 500; }
+
+.card-caption {
+  font-size: 14px;
+  color: #707070;
+  vertical-align: bottom; }
+
+.logo {
+  float: left; }
+  .logo a {
+    background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    width: 80px;
+    height: 50px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.nav {
+  display: flex;
+  justify-content: space-between; }
+  .nav ul {
+    display: flex;
+    align-items: center;
+    padding: 25px 0; }
+    .nav ul li {
+      margin-left: 64px; }
+    .nav ul li:hover {
+      color: #fbf2f2;
+      text-decoration: underline; }
+
+.nav-primary {
+  background-color: #aa0601;
+  color: #fff; }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 32px; }
+
+.footer-primary {
+  background-color: #aa0601;
+  color: #fff; }
+
+.footer-social img {
+  height: 48px;
+  margin-left: 32px; }
+
+.footer-social a:hover {
+  opacity: 0.8; }
+
+.footer-contact li {
+  display: flex;
+  align-items: center; }
+
+.footer-contact a {
+  font-size: 36px;
+  margin-left: 22px; }
+
+.footer-copyright li {
+  margin-left: 48px; }
+
+.banner {
+  background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header.png?raw=true");
+  background-size: cover;
+  height: 100vh; }
+
+.banner-content {
+  float: right; }
+  .banner-content p {
+    font-size: 36px; }
+  .banner-content h2 {
+    font-size: 64px;
+    font-weight: bold; }
+
+.intro {
+  padding: 80px 0;
+  background-color: #fbf2f2; }
+  .intro li {
+    max-width: 24%;
+    vertical-align: top; }
+  .intro img {
+    width: 84px; }
+  .intro h4 {
+    margin-top: 24px;
+    margin-bottom: 8px; }
+
+.kinds li {
+  max-width: 30%; }
+
+.kinds img {
+  margin-bottom: 8px; }
+
+.kind2 {
+  padding: 80px 0;
+  text-align: center;
+  background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/index-bg.png?raw=true");
+  background-size: cover; }
+  .kind2 .card {
+    max-width: 50%; }
+  .kind2 p {
+    padding: 8px 0; }
+
+.suggest {
+  padding: 80px 0;
+  text-align: center; }
+  .suggest .card {
+    max-width: 25%; }
+
+/*# sourceMappingURL=all.css.map */
