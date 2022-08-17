@@ -2,6 +2,9 @@
   background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header.png?raw=true");
   background-size: cover;
   height: 100vh;
+  @include pad() {
+    background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header-sm.png?raw=true");
+  }
 }
 .banner-content {
   float: right;
@@ -20,6 +23,7 @@
   li {
     width: 25%;
     vertical-align: top;
+    margin: 0 12px;
   }
   img {
     max-width: 84px;
@@ -28,25 +32,47 @@
     margin-top: 24px;
     margin-bottom: 8px;
   }
-  @media (max-width: $mobile) {
+  @include pad() {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    li {
+      width: 40%;
+      margin-bottom: 24px;
+      margin: 0 6px;
+    }
+  }
+  @include mobile() {
     ul {
       display: flex;
       flex-wrap: wrap;
     }
     li {
-      width: 40%;
+      width: 100%;
       margin-bottom: 24px;
-      // margin-right: 24px;
     }
   }
 }
 
 .kinds {
   li {
-    max-width: 33%;
+    width: 33%;
+    margin: 0 12px;
   }
   img {
     margin-bottom: 8px;
+  }
+  @include pad() {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
 }
 .kind2 {
@@ -60,13 +86,25 @@
   p {
     padding: 8px 0;
   }
+  @include pad() {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    li {
+      max-width: 100%;
+      margin-bottom: 24px;
+    }
+  }
 }
 .suggest {
   padding: 80px 0;
   text-align: center;
-
-  .card {
+  li {
     width: 25%;
+    margin: 0 12px;
+  }
+  .card {
     position: relative;
   }
   .card-img {
@@ -78,6 +116,29 @@
   .card-caption {
     position: absolute;
     bottom: 16px;
+  }
+  @include pad() {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    li {
+      width: 45%;
+      margin: 0 6px;
+      margin-bottom: 24px;
+    }
+  }
+  @include mobile() {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    li {
+      width: 100%;
+      margin-bottom: 24px;
+    }
   }
 }
 

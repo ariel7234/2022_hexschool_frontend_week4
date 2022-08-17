@@ -19,36 +19,65 @@
 .nav-content {
   display: flex;
   justify-content: space-between;
-  ul {
-    display: flex;
-    align-items: center;
-    li {
-      margin-left: 64px;
-    }
-    li:hover {
-      color: #fbf2f2;
-      text-decoration: underline;
-    }
+}
+//TODO: 漢堡選單
+.menu {
+  display: flex;
+  align-items: center;
+  li {
+    margin-left: 64px;
+  }
+  @include mobile() {
+    max-height: 0px;
+    overflow: hidden;
   }
 }
 .nav-primary {
   background-color: $primary;
   color: #fff;
 }
+.showMenu {
+  display: none;
+  @include mobile() {
+    display: block;
+    float: right;
+    margin: 1rem;
+  }
+}
 
 .footer {
   padding-top: 60px;
   padding-bottom: 32px;
+  @include pad() {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+  @include mobile() {
+    padding-top: 24px;
+    padding-bottom: 0px;
+    p,
+    li {
+      font-size: 16px;
+    }
+  }
 }
 .footer-primary {
   background-color: $primary;
   color: #fff;
 }
-
+.footer-menu {
+  @include mobile() {
+    display: none;
+  }
+}
 .footer-social {
   img {
     height: 48px;
     margin-left: 32px;
+    @include pad() {
+      height: 40px;
+      margin-left: 16px;
+    }
   }
   a:hover {
     opacity: 0.8;
@@ -60,12 +89,14 @@
     align-items: center;
   }
   a {
-    font-size: 36px;
     margin-left: 22px;
   }
 }
 .footer-copyright {
   li {
     margin-left: 48px;
+    @include mobile() {
+      margin-left: 0;
+    }
   }
 }

@@ -27,6 +27,9 @@ li {
 .mr-1 {
   margin-right: 4px !important;
 }
+.mb-2 {
+  margin-bottom: 8px !important;
+}
 .mb-8 {
   margin-bottom: 16px !important;
 }
@@ -60,10 +63,84 @@ li {
 .pb-20 {
   padding-bottom: 80px !important;
 }
+.mb-sm-8 {
+  @include mobile() {
+    margin-bottom: 16px !important;
+  }
+}
+.mt-sm-8 {
+  @include mobile() {
+    margin-top: 16px !important;
+  }
+}
 .material-icons {
   color: white;
-  font-size: 36px;
   text-decoration: none;
+}
+.icon-6 {
+  font-size: 24px;
+}
+.icon-9 {
+  font-size: 36px;
+}
+.icon-10 {
+  font-size: 40px;
+}
+.icon-12 {
+  font-size: 48px;
+}
+.icon-md-6 {
+  @include pad() {
+    font-size: 24px;
+  }
+}
+.icon-md-9 {
+  @include pad() {
+    font-size: 36px;
+  }
+}
+.icon-md-10 {
+  @include pad() {
+    font-size: 40px;
+  }
+}
+.icon-md-12 {
+  @include pad() {
+    font-size: 48px;
+  }
+}
+.icon-sm-6 {
+  @include mobile() {
+    font-size: 24px;
+  }
+}
+.icon-sm-9 {
+  @include mobile() {
+    font-size: 36px;
+  }
+}
+.icon-sm-10 {
+  @include mobile() {
+    font-size: 40px;
+  }
+}
+.icon-sm-12 {
+  @include mobile() {
+    font-size: 48px;
+  }
+}
+.text-36 {
+  font-size: 36px;
+}
+.text-md-16 {
+  @include pad() {
+    font-size: 16px;
+  }
+}
+.text-sm-16 {
+  @include mobile() {
+    font-size: 16px;
+  }
 }
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -74,8 +151,12 @@ li {
 .container {
   max-width: 1296px;
   margin: 0 auto;
-  @media (max-width: $mobile) {
+
+  @include pad() {
     max-width: 696px;
+  }
+  @include mobile() {
+    max-width: 348px;
   }
 }
 .flex {
@@ -83,6 +164,21 @@ li {
 }
 .flex-row {
   flex-direction: column;
+}
+.flex-sm {
+  @include mobile() {
+    display: flex;
+  }
+}
+.flex-row-sm {
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+.flex-reverse-sm {
+  @include mobile() {
+    flex-direction: row-reverse;
+  }
 }
 .wrap {
   display: flex;
@@ -99,6 +195,26 @@ li {
 }
 .align-items-center {
   align-items: center;
+}
+.justify-content-sm-end {
+  @include mobile() {
+    justify-content: end;
+  }
+}
+.justify-content-sm-between {
+  @include mobile() {
+    justify-content: space-between;
+  }
+}
+.justify-content-sm-center {
+  @include mobile() {
+    justify-content: center;
+  }
+}
+.align-items-sm-center {
+  @include mobile() {
+    align-items: center;
+  }
 }
 .input-group {
   display: flex;
@@ -134,8 +250,20 @@ li {
 .text-white {
   color: #fff;
 }
+
 .bg-white {
   background-color: #fff;
+}
+.hover-white {
+  &:hover {
+    background-color: darken(white, 5%);
+  }
+}
+.hover-shadow {
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
+    transition: 0.3s;
+  }
 }
 .btn {
   font-size: 20px;
@@ -165,16 +293,30 @@ li {
     text-decoration: underline;
   }
 }
+.link-hover {
+  &:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+.card {
+  @include pad() {
+    max-width: 336px;
+    margin: 0 auto;
+  }
+}
 
 .card-img {
   width: 100%;
   overflow: hidden;
 }
 .card-shadow {
-  // box-shadow: 3px 3px 12px gray;
-  // padding: 3px;
   box-shadow: 0 0.5rem 1rem rgba(black, 0.15);
   transition: 0.3s;
+  &:hover {
+    box-shadow: 0 1rem 1.5rem rgba(black, 0.5);
+    transition: 0.3s;
+  }
 }
 .card-body {
   padding: 16px;
