@@ -13,6 +13,9 @@ img {
 }
 .h2 {
   font-size: 48px;
+  @include mobile() {
+    font-size: 24px;
+  }
 }
 .h3 {
   font-size: 24px;
@@ -62,6 +65,31 @@ li {
 }
 .pb-20 {
   padding-bottom: 80px !important;
+}
+.mt-md-1 {
+  @include pad() {
+    margin-top: 4px !important;
+  }
+}
+.mb-md-6 {
+  @include pad() {
+    margin-bottom: 24px !important;
+  }
+}
+.mb-md-8 {
+  @include pad() {
+    margin-bottom: 32px !important;
+  }
+}
+.mt-sm-2 {
+  @include mobile() {
+    margin-top: 8px !important;
+  }
+}
+.mb-sm-6 {
+  @include mobile() {
+    margin-bottom: 24px !important;
+  }
 }
 .mb-sm-8 {
   @include mobile() {
@@ -153,10 +181,10 @@ li {
   margin: 0 auto;
 
   @include pad() {
-    max-width: 696px;
+    max-width: 696px !important;
   }
   @include mobile() {
-    max-width: 348px;
+    max-width: 348px !important;
   }
 }
 .flex {
@@ -282,6 +310,9 @@ li {
 .btn-lg {
   width: 416px;
   padding: 16px;
+  @include mobile() {
+    width: 100%;
+  }
 }
 .center {
   margin: 0 auto;
@@ -299,6 +330,7 @@ li {
     text-decoration: underline;
   }
 }
+
 .card {
   @include pad() {
     max-width: 336px;

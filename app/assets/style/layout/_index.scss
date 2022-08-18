@@ -1,9 +1,14 @@
 .banner {
   background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header.png?raw=true");
   background-size: cover;
+  // background-position: center;
   height: 100vh;
   @include pad() {
     background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header-sm.png?raw=true");
+    height: 80vh;
+  }
+  @include mobile() {
+    height: 50vh;
   }
 }
 .banner-content {
@@ -14,6 +19,14 @@
   h2 {
     font-size: 64px;
     font-weight: bold;
+  }
+  @include mobile() {
+    p {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 24px;
+    }
   }
 }
 
@@ -83,7 +96,8 @@
   li {
     max-width: 50%;
   }
-  p {
+  a {
+    display: block;
     padding: 8px 0;
   }
   @include pad() {

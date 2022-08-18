@@ -1,0 +1,21 @@
+.questions {
+  padding: 80px 0;
+  h2 {
+    font-weight: 900;
+    border-left: 8px solid $primary;
+    padding: 0 16px;
+  }
+  h3 {
+    font-weight: 900;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+  ul {
+    max-width: 856px;
+  }
+  p {
+    font-size: 16px;
+  }
+}

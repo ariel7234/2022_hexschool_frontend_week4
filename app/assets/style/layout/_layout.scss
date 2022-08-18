@@ -14,35 +14,84 @@
   }
 }
 .nav {
-  padding: 25px;
+  // padding: 25px;
 }
 .nav-content {
+  height: 80px;
+  padding: 25px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
 }
 //TODO: 漢堡選單
 .menu {
-  display: flex;
-  align-items: center;
+  float: right;
+  align-content: center;
   li {
+    float: left;
     margin-left: 64px;
   }
-  @include mobile() {
-    max-height: 0px;
-    overflow: hidden;
+  a {
+    display: block;
+    color: #fff;
+    &:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
   }
 }
+
+.showMenu {
+  display: none;
+}
+
+@include mobile() {
+  .nav-content {
+    padding: 20px 0;
+  }
+  .menu {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-top: 1px;
+    position: absolute;
+    z-index: 100;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: $primary;
+  }
+  .menu li {
+    display: block;
+    float: none;
+    border-top: 1px solid #fff;
+    padding: 1rem;
+    margin: 0;
+    &:hover {
+      background-color: $primary-darker;
+    }
+  }
+  .menu a {
+    text-align: center;
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+
+  .showMenu {
+    display: block;
+    float: right;
+  }
+  .menu-show .menu {
+    max-height: 500px;
+  }
+}
+
 .nav-primary {
   background-color: $primary;
   color: #fff;
-}
-.showMenu {
-  display: none;
-  @include mobile() {
-    display: block;
-    float: right;
-    margin: 1rem;
-  }
 }
 
 .footer {
