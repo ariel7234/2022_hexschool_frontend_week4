@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>首頁</title>
     <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
@@ -11,163 +11,214 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-primary">
-        <div class="nav container">
-          <h1 class="logo"><a href="#">Logo</a></h1>
-          <ul>
-            <li><a href="#">系列鏡框</a></li>
-            <li><a href="#">門市據點</a></li>
-            <li><a href="#">部落格</a></li>
-            <li><a href="#">常見問題</a></li>
+    <nav class="nav nav-primary">
+      <div class="container">
+        <div class="nav-content">
+          <h1 class="logo"><a href="index.html">Logo</a></h1>
+          <a href="index.html" class="showMenu"><span class="material-icons icon-sm-10 material-symbols-outlined"> menu </span></a>
+          <ul class="menu">
+            <li><a class="" href="#">系列鏡框</a></li>
+            <li><a class="" href="#">門市據點</a></li>
+            <li><a class="" href="#">部落格</a></li>
+            <li><a class="" href="question.html">常見問題</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     
-<div class="banner">
+<section class="banner">
   <div class="container flex justify-content-end align-items-center h-100">
     <div class="banner-content text-right">
       <p class="text-info">Promise-Desert 2020 早春系列</p>
       <h2 class="text-info">看得清，才能看得遠</h2>
-      <button class="btn btn-primary float-right">立即購買</button>
+      <button class="btn btn-primary float-right mt-md-1 mt-sm-2">立即購買</button>
     </div>
   </div>
-</div>
-<div class="intro text-center">
+</section>
+<section class="intro text-center">
   <div class="container">
-    <h3 class="h2 text-info text-bold mb-4">用專業的心，做專業的事</h3>
-    <ul>
-      <li class="card">
+    <h3 class="h2 text-info text-bold mb-8">用專業的心，做專業的事</h3>
+    <ul class="flex">
+      <li>
         <img src="./assets/images/home-section2-1.png" alt="單一價格" />
         <h4 class="h3 text-info text-bold">單一價格</h4>
         <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
       </li>
-      <li class="card">
+      <li>
         <img src="./assets/images/home-section2-2.png" alt="20 分鐘即可取件" />
         <h4 class="h3 text-info text-bold">20 分鐘即可取件</h4>
         <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
       </li>
-      <li class="card">
+      <li>
         <img src="./assets/images/home-section2-3.png" alt="安心售後服務" />
         <h4 class="h3 text-info text-bold">安心售後服務</h4>
         <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
       </li>
-      <li class="card">
+      <li>
         <img src="./assets/images/home-section2-4.png" alt="關於鏡片" />
         <h4 class="h3 text-info text-bold">關於鏡片</h4>
         <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
       </li>
     </ul>
   </div>
-</div>
-<div class="kinds pt-10 pb-10 text-center">
+</section>
+<section class="kinds pt-20 pb-20 text-center">
   <div class="container">
-    <h3 class="h2 text-info text-bold mb-6">用專業的心，做專業的事</h3>
-    <ul>
-      <li class="card mr-3">
-        <img src="./assets/images/home-section3-1.png" alt="OPTICAL" />
-        <h3 class="h2 text-primary text-italic text-bolder">OPTICAL</h3>
+    <h3 class="h2 text-info text-bold mb-12">用專業的心，做專業的事</h3>
+    <ul class="flex">
+      <li>
+        <div class="card hover-shadow">
+          <img src="./assets/images/home-section3-1.png" alt="OPTICAL" />
+          <h3 class="h2 text-primary text-italic text-bolder">OPTICAL</h3>
+        </div>
       </li>
-      <li class="card mr-3">
-        <img src="./assets/images/home-section3-2.png" alt="SUNGLASSES" />
-        <h3 class="h2 text-primary text-italic text-bolder">SUNGLASSES</h3>
+      <li>
+        <div class="card hover-shadow">
+          <img src="./assets/images/home-section3-2.png" alt="SUNGLASSES" />
+          <h3 class="h2 text-primary text-italic text-bolder">SUNGLASSES</h3>
+        </div>
       </li>
-      <li class="card">
-        <img src="./assets/images/home-section3-3.png" alt="FUNCTIONAL" />
-        <h3 class="h2 text-primary text-italic text-bolder">FUNCTIONAL</h3>
+      <li>
+        <div class="card hover-shadow">
+          <img src="./assets/images/home-section3-3.png" alt="FUNCTIONAL" />
+          <h3 class="h2 text-primary text-italic text-bolder">FUNCTIONAL</h3>
+        </div>
       </li>
     </ul>
   </div>
-</div>
-<div class="kind2">
+</section>
+<section class="kind2">
   <div class="container">
-    <h3 class="h2 text-white text-bold mb-6">聯名設計鏡框</h3>
-
-    <div class="card">
-      <img src="./assets/images/home-section4-1.png" alt="DOUBLE A+" />
-      <p class="h2 text-primary text-italic text-bolder text-center bg-white">DOUBLE A+</p>
-    </div>
-    <div class="card">
-      <img src="./assets/images/home-section4-2.png" alt="YOUTH" />
-      <p class="h2 text-primary text-italic text-bolder text-center bg-white">YOUTH</p>
-    </div>
+    <h3 class="h2 text-white text-bold mb-12">聯名設計鏡框</h3>
+    <ul class="flex">
+      <li>
+        <div>
+          <img src="./assets/images/home-section4-1.png" alt="DOUBLE A+" />
+          <a href="#" class="h2 text-primary text-italic text-bolder text-center bg-white hover-white">DOUBLE A+</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <img src="./assets/images/home-section4-2.png" alt="YOUTH" />
+          <a href="#" class="h2 text-primary text-italic text-bolder text-center bg-white hover-white">YOUTH</a>
+        </div>
+      </li>
+    </ul>
   </div>
-</div>
-<div class="suggest">
+</section>
+<section class="suggest">
   <div class="container">
-    <h3 class="h2 text-info text-bold mb-6">顧客推薦</h3>
-    <div>
-      <div class="card card-shadow mr-3">
-        <img class="card-img" src="./assets/images/home-section5-1.png" alt="Jessy" />
-        <div class="card-body text-left">
-          <p class="card-title">Jessy</p>
-          <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-          <p class="card-caption">2021/06/20</p>
+    <h3 class="h2 text-info text-bold mb-12">顧客推薦</h3>
+    <ul class="flex">
+      <li>
+        <div class="card card-shadow">
+          <img class="card-img" src="./assets/images/home-section5-1.png" alt="Jessy" />
+          <div class="card-body text-left flex flex-row">
+            <div class="">
+              <p class="card-title mb-2">Jessy</p>
+              <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+            </div>
+            <p class="card-caption">2021/06/20</p>
+          </div>
         </div>
-      </div>
-      <div class="card card-shadow mr-3">
-        <img class="card-img" src="./assets/images/home-section5-2.png" alt="凱倫" />
-        <div class="card-body text-left">
-          <p class="card-title">凱倫</p>
-          <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-          <p class="card-caption">2021/04/18</p>
+      </li>
+      <li>
+        <div class="card card-shadow">
+          <img class="card-img" src="./assets/images/home-section5-2.png" alt="凱倫" />
+          <div class="card-body text-left flex flex-row justify-content-between">
+            <div class="">
+              <p class="card-title mb-2">凱倫</p>
+              <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+            </div>
+            <p class="card-caption">2021/04/18</p>
+          </div>
         </div>
-      </div>
-      <div class="card card-shadow mr-3">
-        <img class="card-img" src="./assets/images/home-section5-3.png" alt="悠悠" />
-        <div class="card-body text-left">
-          <p class="card-title">悠悠</p>
-          <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-          <p class="card-caption">2020/12/25</p>
+      </li>
+      <li>
+        <div class="card card-shadow">
+          <img class="card-img" src="./assets/images/home-section5-3.png" alt="悠悠" />
+          <div class="card-body text-left flex flex-row justify-content-between">
+            <div class="">
+              <p class="card-title mb-2">悠悠</p>
+              <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+            </div>
+            <p class="card-caption">2020/12/25</p>
+          </div>
         </div>
-      </div>
-      <div class="card card-shadow">
-        <img class="card-img" src="./assets/images/home-section5-4.png" alt="Kyuan" />
-        <div class="card-body text-left">
-          <p class="card-title">Kyuan</p>
-          <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-          <p class="card-caption">2020/10/31</p>
+      </li>
+      <li>
+        <div class="card card-shadow">
+          <img class="card-img" src="./assets/images/home-section5-4.png" alt="Kyuan" />
+          <div class="card-body text-left flex flex-row justify-content-between">
+            <div class="">
+              <p class="card-title mb-2">Kyuan</p>
+              <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+            </div>
+            <p class="card-caption">2020/10/31</p>
+          </div>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
-</div>
+</section>
+<section class="contact">
+  <div class="container">
+    <h3 class="h2 text-info text-bold mb-12 text-center">聯絡我們</h3>
+    <p class="mb-12">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+    <form class="form flex flex-row">
+      <label for="userName">姓名</label>
+      <input type="text" name="userName" placeholder="陳小明" />
+      <label for="phone">聯絡電話</label>
+      <input type="tel" name="phone" placeholder="0912-345-678" />
+      <label for="email">電子郵件</label>
+      <input type="text" name="email" placeholder="example@email.com" />
+      <label for="comment">意見反映</label>
+      <textarea name="comment" cols="30" rows="10" placeholder="請輸入您的意見" class="mb-8"></textarea>
+      <div class="input-group mb-12">
+        <input type="checkbox" name="agreement" class="mr-1" />
+        <label for="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+      </div>
+      <div class="btn btn-primary btn-lg center">確認送出</div>
+    </form>
+  </div>
+</section>
 
 
     <footer class="footer footer-primary">
       <div class="container">
-        <div class="flex justify-content-between">
-          <ul class="footer-menu flex">
-            <li class="link-primary mr-6"><a href="#">首頁</a></li>
-            <li class="link-primary mr-6"><a href="#">系列鏡框</a></li>
-            <li class="link-primary mr-6"><a href="#">門市據點</a></li>
-            <li class="link-primary mr-6"><a href="#">部落格</a></li>
-            <li class="link-primary mr-6"><a href="#">常見問題</a></li>
-          </ul>
-          <ul class="footer-social flex">
-            <li>
-              <a href=""><img src="./assets/images/ic_social_fb.png" alt="facebook" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./assets/images/ic_social_ig.png" alt="instagram" /></a>
-            </li>
-            <li>
-              <a href=""><img src="./assets/images/ic_social_line.png" alt="line" /></a>
-            </li>
+        <div class="flex-sm flex-reverse-sm">
+          <div class="flex justify-content-between">
+            <ul class="footer-menu flex">
+              <li class="link-primary mr-12"><a class="text-md-16" href="index.html">首頁</a></li>
+              <li class="link-primary mr-12"><a class="text-md-16" href="#">系列鏡框</a></li>
+              <li class="link-primary mr-12"><a class="text-md-16" href="#">門市據點</a></li>
+              <li class="link-primary mr-12"><a class="text-md-16" href="#">部落格</a></li>
+              <li class="link-primary mr-12"><a class="text-md-16" href="question.html">常見問題</a></li>
+            </ul>
+            <ul class="footer-social flex">
+              <li>
+                <a href=""><img src="./assets/images/ic_social_fb.png" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/images/ic_social_ig.png" alt="instagram" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./assets/images/ic_social_line.png" alt="line" /></a>
+              </li>
+            </ul>
+          </div>
+          <ul class="footer-contact">
+            <li><span class="material-icons icon-9 icon-md-9 icon-sm-6 material-symbols-outlined">call</span><a class="link-primary text-36 text-sm-16" href="tel:+0800-000-000">0800-000-000</a></li>
+            <li><span class="material-icons icon-9 icon-md-9 icon-sm-6 material-symbols-outlined">mail</span><a class="link-primary text-36 text-sm-16" href="mailto:glasses@business.com">glasses@business.com</a></li>
           </ul>
         </div>
-        <ul class="footer-contact">
-          <li><span class="material-icons material-symbols-outlined">call</span><a class="link-primary" href="tel:+0800-000-000">0800-000-000</a></li>
-          <li><span class="material-icons material-symbols-outlined">mail</span><a class="link-primary" href="mailto:glasses@business.com">glasses@business.com</a></li>
-        </ul>
-        <hr class="mt-4 mb-4" />
-        <div class="footer-copyright flex justify-content-between">
-          <p>Copyright © 2020 Glasses.All rights reserved.</p>
-          <ul class="flex">
-            <li><a class="link-primary" href="#">隱私權政策</a></li>
-            <li><a class="link-primary" href="#">服務條款</a></li>
+        <hr class="mt-8 mb-8 mb-sm-8 mt-sm-8" />
+        <div class="footer-copyright flex justify-content-between flex-row-sm">
+          <p class="mb-sm-8">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="flex flex-row-sm">
+            <li class="mb-sm-8"><a class="link-primary" href="#">隱私權政策</a></li>
+            <li class="mb-sm-8"><a class="link-primary" href="#">服務條款</a></li>
           </ul>
         </div>
       </div>
