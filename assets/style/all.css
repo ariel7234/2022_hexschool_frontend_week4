@@ -481,7 +481,8 @@ li {
   margin: 0px; }
 
 .logo {
-  float: left; }
+  float: left;
+  margin: 15px 0; }
   .logo a {
     background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
     background-size: cover;
@@ -495,7 +496,6 @@ li {
 
 .nav-content {
   height: 80px;
-  padding: 25px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -503,7 +503,8 @@ li {
 
 .menu {
   float: right;
-  align-content: center; }
+  align-content: center;
+  padding: 25px 0; }
   .menu li {
     float: left;
     margin-left: 64px; }
@@ -518,9 +519,8 @@ li {
   display: none; }
 
 @media (max-width: 375px) {
-  .nav-content {
-    padding: 20px 0; }
   .menu {
+    padding: 0;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -546,7 +546,8 @@ li {
       text-decoration: none; }
   .showMenu {
     display: block;
-    float: right; }
+    float: right;
+    padding: 20px 0; }
   .menu-show .menu {
     max-height: 500px; } }
 
