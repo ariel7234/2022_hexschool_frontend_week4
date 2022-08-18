@@ -1,7 +1,7 @@
 .logo {
   float: left;
+  margin: 15px 0;
   a {
-    // background-image: url("../assets/images/logo-white.png");
     background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/logo-white.png?raw=true");
     background-size: cover;
     display: inline-block;
@@ -16,7 +16,6 @@
 
 .nav-content {
   height: 80px;
-  padding: 25px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -25,6 +24,7 @@
 .menu {
   float: right;
   align-content: center;
+  padding: 25px 0;
   li {
     float: left;
     margin-left: 64px;
@@ -44,10 +44,8 @@
 }
 
 @include mobile() {
-  .nav-content {
-    padding: 20px 0;
-  }
   .menu {
+    padding: 0;
     max-height: 0px;
     overflow: hidden;
     transition: max-height 0.5s;
@@ -80,6 +78,7 @@
   .showMenu {
     display: block;
     float: right;
+    padding: 20px 0;
   }
   .menu-show .menu {
     max-height: 500px;
