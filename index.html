@@ -168,18 +168,18 @@
     <p class="mb-12">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form class="form flex flex-row">
       <label for="userName">姓名</label>
-      <input type="text" name="userName" placeholder="陳小明" />
+      <input type="text" id="userName" name="userName" placeholder="陳小明" />
       <label for="phone">聯絡電話</label>
-      <input type="tel" name="phone" placeholder="0912-345-678" />
+      <input type="tel" id="phone" name="phone" placeholder="0912-345-678" />
       <label for="email">電子郵件</label>
-      <input type="text" name="email" placeholder="example@email.com" />
+      <input type="text" id="email" name="email" placeholder="example@email.com" />
       <label for="comment">意見反映</label>
-      <textarea name="comment" cols="30" rows="10" placeholder="請輸入您的意見" class="mb-8"></textarea>
+      <textarea id="comment" name="comment" cols="30" rows="10" placeholder="請輸入您的意見" class="mb-8"></textarea>
       <div class="input-group mb-12">
-        <input type="checkbox" name="agreement" class="mr-1" />
+        <input type="checkbox" id="agreement" name="agreement" class="mr-1" />
         <label for="agreement">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
       </div>
-      <div class="btn btn-primary btn-lg center">確認送出</div>
+      <a class="btn btn-primary btn-lg center" href="#" value="submit">確認送出</a>
     </form>
   </div>
 </section>
@@ -213,7 +213,7 @@
             <li><span class="material-icons icon-9 icon-md-9 icon-sm-6 material-symbols-outlined">mail</span><a class="link-primary text-36 text-sm-16" href="mailto:glasses@business.com">glasses@business.com</a></li>
           </ul>
         </div>
-        <hr class="mt-8 mb-8 mb-sm-8 mt-sm-8" />
+        <!-- <hr class="mt-8 mb-8 mb-sm-8 mt-sm-8" /> -->
         <div class="footer-copyright flex justify-content-between flex-row-sm">
           <p class="mb-sm-8">Copyright © 2020 Glasses.All rights reserved.</p>
           <ul class="flex flex-row-sm">
