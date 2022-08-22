@@ -13,7 +13,11 @@
     white-space: nowrap;
   }
 }
-
+nav > .container {
+  @media (max-width: 767px) {
+    max-width: 695px !important;
+  }
+}
 .nav-content {
   height: 80px;
   display: flex;
@@ -138,6 +142,9 @@
   }
 }
 .footer-copyright {
+  border-top: 1px solid #fff;
+  padding-top: 32px;
+  margin-top: 32px;
   li {
     margin-left: 48px;
     @include mobile() {

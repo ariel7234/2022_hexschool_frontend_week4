@@ -3,12 +3,6 @@
    License: none (public domain)
 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html,
 body,
 div,
@@ -134,13 +128,4 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-img {
-  vertical-align: middle;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  color: inherit;
 }
