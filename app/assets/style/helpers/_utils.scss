@@ -189,6 +189,11 @@
     display: flex;
   }
 }
+.flex-row-md{
+  @include pad(){
+    flex-direction: column;
+  }
+}
 .flex-row-sm {
   @include mobile() {
     flex-direction: column;
