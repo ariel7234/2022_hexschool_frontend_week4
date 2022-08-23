@@ -176,13 +176,13 @@ li {
 .mb-2 {
   margin-bottom: 8px !important; }
 
-.mb-8 {
+.mb-4 {
   margin-bottom: 16px !important; }
 
-.mr-12 {
+.mr-6 {
   margin-right: 24px !important; }
 
-.mb-12 {
+.mb-6 {
   margin-bottom: 24px !important; }
 
 .mt-8 {
@@ -224,6 +224,10 @@ li {
 @media (max-width: 576px) {
   .mt-sm-2 {
     margin-top: 8px !important; } }
+
+@media (max-width: 576px) {
+  .mb-sm-2 {
+    margin-bottom: 8px !important; } }
 
 @media (max-width: 576px) {
   .mb-sm-6 {
@@ -287,6 +291,10 @@ li {
 
 .text-36 {
   font-size: 36px; }
+
+@media (max-width: 992px) {
+  .text-md-14 {
+    font-size: 14px; } }
 
 @media (max-width: 992px) {
   .text-md-16 {
@@ -493,10 +501,6 @@ li {
     overflow: hidden;
     white-space: nowrap; }
 
-@media (max-width: 767px) {
-  nav > .container {
-    max-width: 695px !important; } }
-
 .nav-content {
   height: 80px;
   display: flex;
@@ -521,7 +525,45 @@ li {
 .showMenu {
   display: none; }
 
-@media (max-width: 576px) {
+.nav-primary {
+  background-color: #aa0601;
+  color: #fff; }
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 32px; }
+
+.footer-primary {
+  background-color: #aa0601;
+  color: #fff; }
+
+.footer-social img {
+  height: 48px;
+  margin-left: 32px; }
+
+.footer-social a:hover {
+  opacity: 0.8; }
+
+.footer-contact li {
+  display: flex;
+  align-items: center; }
+
+.footer-contact a {
+  margin-left: 22px; }
+
+.footer-copyright {
+  border-top: 1px solid #fff;
+  padding-top: 32px;
+  margin-top: 32px; }
+  .footer-copyright li {
+    margin-left: 48px; }
+
+@media (max-width: 992px) {
+  .footer-social img {
+    height: 40px;
+    margin-left: 16px; } }
+
+@media (max-width: 767px) {
   .menu {
     padding: 0;
     max-height: 0px;
@@ -552,62 +594,26 @@ li {
     float: right;
     padding: 20px 0; }
   .menu-show .menu {
-    max-height: 500px; } }
-
-.nav-primary {
-  background-color: #aa0601;
-  color: #fff; }
-
-.footer {
-  padding-top: 60px;
-  padding-bottom: 32px; }
-  @media (max-width: 992px) {
-    .footer {
-      padding-top: 48px;
-      padding-bottom: 40px; } }
-  @media (max-width: 576px) {
-    .footer {
-      padding-top: 24px;
-      padding-bottom: 0px; }
-      .footer p,
-      .footer li {
-        font-size: 16px; } }
-
-.footer-primary {
-  background-color: #aa0601;
-  color: #fff; }
+    max-height: 500px; }
+  .footer > .container {
+    max-width: 696px; }
+  .footer-menu {
+    display: none; }
+  .footer-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; }
+    .footer-content a {
+      font-size: 16px; } }
 
 @media (max-width: 576px) {
-  .footer-menu {
-    display: none; } }
-
-.footer-social img {
-  height: 48px;
-  margin-left: 32px; }
-  @media (max-width: 992px) {
-    .footer-social img {
-      height: 40px;
-      margin-left: 16px; } }
-
-.footer-social a:hover {
-  opacity: 0.8; }
-
-.footer-contact li {
-  display: flex;
-  align-items: center; }
-
-.footer-contact a {
-  margin-left: 22px; }
-
-.footer-copyright {
-  border-top: 1px solid #fff;
-  padding-top: 32px;
-  margin-top: 32px; }
-  .footer-copyright li {
-    margin-left: 48px; }
-    @media (max-width: 576px) {
-      .footer-copyright li {
-        margin-left: 0; } }
+  .footer-copyright {
+    flex-direction: column; }
+    .footer-copyright ul {
+      flex-direction: column; }
+    .footer-copyright li {
+      margin-left: 0;
+      margin-bottom: 8px; } }
 
 .banner {
   background-image: url("https://github.com/ariel7234/2022_hexschool_frontend_week4/blob/main/app/assets/images/home-header.png?raw=true");
@@ -654,7 +660,8 @@ li {
     .intro li {
       width: 40%;
       margin-bottom: 24px;
-      margin: 0 6px; } }
+      margin-left: 6px;
+      margin-right: 6px; } }
   @media (max-width: 576px) {
     .intro ul {
       display: flex;
@@ -729,7 +736,9 @@ li {
       justify-content: center; }
     .suggest li {
       width: 100%;
-      margin-bottom: 24px; } }
+      margin-bottom: 24px;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .contact {
   padding: 80px 0;
