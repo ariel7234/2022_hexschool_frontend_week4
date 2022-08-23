@@ -43,6 +43,52 @@
   display: none;
 }
 
+.nav-primary {
+  background-color: $primary;
+  color: #fff;
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 32px;
+}
+.footer-primary {
+  background-color: $primary;
+  color: #fff;
+}
+
+.footer-social {
+  img {
+    height: 48px;
+    margin-left: 32px;
+  }
+  a:hover {
+    opacity: 0.8;
+  }
+}
+.footer-contact {
+  li {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    margin-left: 22px;
+  }
+}
+.footer-copyright {
+  border-top: 1px solid #fff;
+  padding-top: 32px;
+  margin-top: 32px;
+  li {
+    margin-left: 48px;
+  }
+}
+@include pad() {
+  .footer-social img {
+    height: 40px;
+    margin-left: 16px;
+  }
+}
+
 @media (max-width: 767px) {
   .menu {
     padding: 0;
@@ -83,68 +129,32 @@
   .menu-show .menu {
     max-height: 500px;
   }
-}
 
-.nav-primary {
-  background-color: $primary;
-  color: #fff;
-}
-// FIXME: footer RWD 重新整理
-.footer {
-  padding-top: 60px;
-  padding-bottom: 32px;
-  @include pad() {
-    padding-top: 48px;
-    padding-bottom: 40px;
+  .footer > .container {
+    max-width: 696px;
   }
-  @media (max-width: 767px) {
-    padding-top: 24px;
-    padding-bottom: 0px;
-    p,
-    li {
+  .footer-menu {
+    display: none;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    a {
       font-size: 16px;
     }
   }
 }
-.footer-primary {
-  background-color: $primary;
-  color: #fff;
-}
-.footer-menu {
-  @include mobile() {
-    display: none;
-  }
-}
-.footer-social {
-  img {
-    height: 48px;
-    margin-left: 32px;
-    @include pad() {
-      height: 40px;
-      margin-left: 16px;
+
+@include mobile() {
+  .footer-copyright {
+    flex-direction: column;
+    ul {
+      flex-direction: column;
     }
-  }
-  a:hover {
-    opacity: 0.8;
-  }
-}
-.footer-contact {
-  li {
-    display: flex;
-    align-items: center;
-  }
-  a {
-    margin-left: 22px;
-  }
-}
-.footer-copyright {
-  border-top: 1px solid #fff;
-  padding-top: 32px;
-  margin-top: 32px;
-  li {
-    margin-left: 48px;
-    @media (max-width: 767px) {
+    li {
       margin-left: 0;
+      margin-bottom: 8px;
     }
   }
 }
