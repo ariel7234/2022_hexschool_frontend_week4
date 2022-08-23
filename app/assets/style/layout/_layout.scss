@@ -13,11 +13,7 @@
     white-space: nowrap;
   }
 }
-nav > .container {
-  @media (max-width: 767px) {
-    max-width: 695px !important;
-  }
-}
+
 .nav-content {
   height: 80px;
   display: flex;
@@ -47,7 +43,7 @@ nav > .container {
   display: none;
 }
 
-@include mobile() {
+@media (max-width: 767px) {
   .menu {
     padding: 0;
     max-height: 0px;
